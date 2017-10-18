@@ -1,0 +1,127 @@
+$loft-textGray: #666666;
+$loft-textBlue: #0986c4;
+$loft-textGrayGray: gray;
+$loft-textBlack: #000000;
+$loft-textPink: #ff1493;
+$loft-textwhitePink: #cc3366;
+$loft-textPurple: #884388;
+$loft-textWhite: white;
+$loft-textDarkPurple: #333366;
+$loft-textCoral: #66cccc;
+
+@mixin flex
+(
+  $align: flex-start,
+  $justify: flex-start,
+  $direction: row,
+  $wrap: wrap
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin text
+(
+  $margin-left: 70px,
+  $loft-textGray: #666666,
+  $font: 18px,
+  $line:  1.6,
+  $padding-top: 17px
+
+) {
+  margin-left: $margin-left;
+  color: $loft-textGray;
+  font-size: $font;
+  line-height: $line;
+  padding-top: $padding-top;
+}
+
+@mixin button
+(
+  $align: flex-start,
+  $radius: 5px,
+  $border: 1px solid #3366cc,
+  $back: #3366cc,
+  $padding: 20px,
+  $text-decoration: none,
+  $color: $loft-textWhite,
+  $font-size: 24px
+) {
+  display: flex;
+  align-items: $align;
+  border: $border;
+  border-radius: $radius;
+  background-color: $back;
+  padding: $padding;
+  text-decoration: $text-decoration;
+  color: $color;
+  font-size: $font-size;
+}
+
+@mixin hover
+(
+  $background: #6699cc,
+  $border: 1px solid #6699cc
+) {
+  background-color: $background;
+  border: $border;
+}
+
+
+@mixin ipad
+(
+  $height: 649px,
+  $width: 25%,
+  $background-size: 100%,
+  $margin-top: 100px
+) {
+  height: $height;
+  width: $width;
+  background-size: $background-size;
+  margin-top: $margin-top;
+}
+
+@mixin numbers
+(
+  $color: $loft-textBlue,
+  $font-size: 100px,
+  $font-weight: bold
+) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin numText
+(
+  $color: $loft-textBlue,
+  $width: 150px
+) {
+  color: $color;
+  width: $width;
+}
+
+@mixin window
+(
+  $width: 350px,
+  $height: 250px,
+  $margin-left: 85px,
+  $margin-top: 50px,
+  $position: relative,
+  $overflow: hidden,
+  $justify-content: center,
+  $align-items: center
+) {
+  display: flex;
+  width: $width;
+  height: $height;
+  margin-left: $margin-left;
+  margin-top: $margin-top;
+  position: $position;
+  overflow: $overflow;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

@@ -1,0 +1,370 @@
+@import "./global_styles/variables.scss";
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif
+}
+
+.top {
+  @include flex(center,space-between);
+  height: 100px;
+  padding-left: 13%;
+  padding-right: 13%;
+}
+
+.left {
+  @include flex;
+  width: 550px;
+  margin: 20px;
+}
+
+.header-link {
+  @include text (100px, #666666, 16px, 1.6, 10px);
+}
+
+.header-link-link1 {
+  color: $loft-textGray;
+  text-decoration: none;
+}
+
+.header-link-link1:hover {
+  color: $loft-textBlack;
+  font-weight: 600;
+}
+
+.header-link2 {
+  @include text (20px, #666666, 16px, 1.6 ,10px);
+}
+
+.header-link-link2 {
+  color: $loft-textGray;
+  text-decoration: none;
+}
+.header-link-link2:hover {
+  color: $loft-textBlack;
+  font-weight: 600;
+}
+
+.rigth {
+  @include flex(center, flex-end);
+}
+
+.header-link-link3 {
+  @include text(0, $loft-textPink, 16px, 0, 0);
+  font-weight: bold;
+}
+
+.fon-container {
+  @include flex(start, start, column);
+  background-image: url('./static/images/pic1920.jpg');
+  width: 100%;
+  height: 1280px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.fon-text {
+  @include flex(flex-start, flex-start, column);
+  margin-left: 14%;
+  margin-top: 21%;
+}
+
+.fon-text-span {
+  @include text(0, #ffffff, 60px, 1, 0);
+  background-color: $loft-textPurple;
+  opacity: 0.5;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 3vw;
+}
+
+.button-number1 {
+  @include button;
+  @include flex(center, center);
+  margin-top: 40px;
+}
+
+.button-number1:hover {
+  @include hover;
+}
+
+.fon-container-2 {
+  @include flex(flex-start, flex-start, row, nowrap);
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
+.fon-container-2__content {
+  @include flex;
+  margin-left: 14%;
+  width: 100%;
+}
+
+.ipad {
+  @include ipad;
+  background-image: url('./static/images/ipad.png');
+  background-repeat: no-repeat;
+}
+
+.fon-container-2__content-text {
+  @include flex(flex-start, flex-start, column, wrap);
+  width: 50%;
+  margin-left: 70px;
+  margin-top: 100px;
+}
+
+.text-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-three {
+  display: flex;
+  flex-direction: column;
+}
+
+.fon-container-2__content-text-title {
+  color: $loft-textBlue;
+}
+
+.fon-container-2__content-text-present {
+  font-size: 18px;
+  color: $loft-textGray;
+  font-weight: bold;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.fon-container-2__content-text-title-2 {
+  color: $loft-textDarkPurple;
+}
+
+.fon-container-2__content-button {
+  @include button(center, 5px, 3px solid $loft-textDarkPurple, none);
+  @include flex(center, center);
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 5px;
+  color: $loft-textDarkPurple;
+}
+
+.fon-container-2__content-button:hover {
+  @include hover($loft-textDarkPurple, 3px solid $loft-textDarkPurple);
+  color: $loft-textWhite;
+}
+
+.fon-container-2__content-numbers {
+  @include flex(center, space-between);
+  width: 85%;
+  margin-top: 15px;
+}
+
+.fon-container-2__content-numbers_number-1 {
+  @include numbers($loft-textBlue);
+}
+
+.fon-container-2__content-numbers_number-2 {
+  @include numbers($loft-textPurple);
+}
+
+.fon-container-2__content-numbers_number-3 {
+  @include numbers($loft-textPink);
+}
+
+.fon-container-2__content-numbers-text-1 {
+  @include numText($loft-textBlue);
+}
+
+.fon-container-2__content-numbers-text-2 {
+  @include numText($loft-textPurple, 250px);
+}
+
+.fon-container-2__content-numbers-text-3 {
+  @include numText($loft-textPink, 150px);
+}
+
+.fon-container-3 {
+  @include flex(flex-start, flex-start, column);
+}
+
+.fon-container-3__content {
+  @include flex(flex-start, flex-start, column);
+  margin-left: 14%;
+  margin-top: 3%;
+}
+
+.fon-container-3__content-ipad {
+  @include flex;
+}
+
+.fon-container-3__content-ipad-ipad {
+  @include ipad(420px, 25%, 95%, 178px);
+  background-image: url("./static/images/ipad.png");
+  background-repeat: no-repeat;
+}
+
+.fon-container-3__content-2-text {
+  @include flex(flex-start, flex-start, column);
+  width: 45%;
+  margin-left: 70px;
+}
+
+.fon-container-3__content-2-text-title-3 {
+  margin-top: 220px;
+  color: $loft-textBlue;
+  font-size: 34px;
+}
+
+.fon-container-3__content-2-text-present {
+  @include text(0, $loft-textGray, 18px);
+  font-weight: bold;
+}
+
+.fon-container-3__content-2-button {
+  @include button(center, 5px, 3px solid $loft-textDarkPurple, none);
+  @include flex(center, center);
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 25px;
+  color: $loft-textDarkPurple;
+}
+
+.fon-container-3__content-2-button:hover {
+  @include hover($loft-textDarkPurple, 3px solid $loft-textDarkPurple);
+  color: $loft-textWhite;
+}
+
+.fon-container-4 {
+  background-color: $loft-textDarkPurple;
+}
+
+.fon-container-4__content {
+  @include flex(flex-start, flex-start, column);
+  margin-left: 14%;
+}
+
+.fon-container-4__content-title {
+  color: $loft-textWhite;
+  margin-top: 65px;
+}
+
+.fon-container-4__content-windows {
+  display: flex;
+  margin-left: -125px;
+}
+
+.fon-container-4__content-windows-windows {
+  @include flex(flex-start, flex-start);
+}
+
+
+.col1 {
+  @include window();
+  background-color: $loft-textBlue;
+}
+
+.col2 {
+  @include window();
+  background-color: $loft-textPurple;
+}
+
+.col3 {
+  @include window();
+  background-color: $loft-textPink;
+}
+
+.descr {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  opacity: 1;
+  transition: all .5s;
+  top: 76%;
+}
+
+.fon-container-4__content-windows-windows li:hover .descr {
+  opacity: 1;
+  top: 0;
+  overflow: hidden;
+}
+
+.fon-container-4__content-windows-windows li:hover img {
+  opacity: 0;
+  transition: all .3s;
+}
+
+.marg {
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+.fon-container-4__content-button {
+  @include button(center, 5px, 5px, $loft-textDarkPurple, 15px 15px, none, $loft-textPink, 24px);
+  border: 3px solid $loft-textPink;
+  justify-content: center;
+  margin-top: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.fon-container-4__content-button:hover {
+  @include hover($loft-textwhitePink, 3px solid $loft-textwhitePink);
+  color: $loft-textWhite;
+}
+
+.footer-box {
+  @include flex(center, space-around);
+  width: 100%;
+  height: 100px;
+  background-color: #2c2c5f;
+  color: white;
+}
+
+.footer-text {
+  display: flex;
+  margin-left: -145px;
+}
+
+.footer-text2 {
+  display: flex;
+  margin-left: -40px;
+}
+
+@media only screen and (max-width: 960px) {
+  .top {
+    height: 100%;
+    display: flex;
+  }
+
+  .header-link {
+    margin-left: 0;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+
+
+
+}

@@ -1,0 +1,32 @@
+{
+  "name": "gulp-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-connect": "^5.0.0",
+    "gulp-css-scss": "^0.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-install": "^1.1.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-server-livereload": "^1.9.2"
+  },
+  "scripts": {
+    "test": "gulpfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
